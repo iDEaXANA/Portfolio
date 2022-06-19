@@ -253,7 +253,7 @@ header.sticky{
 .timeline{
     background: var(--bg-color);
     margin: 0 auto; /* Horizontally centers timeline */
-    max-width: 100%; /* 750px */
+    max-width: 100%; 
     padding: 25px;
     display: grid;
     grid-template-columns: 1fr 3px 1fr; /* 3 columns, first and last are the same, middle is tiny */
@@ -500,7 +500,7 @@ form textarea{
         width: 700px;
         height: auto;
     }
-    .timeline{  /* Makes the timline fit into one column */
+    .timeline{  /* Makes the timeline fit into one column */
         grid-template-columns: 1;
         overflow-x: hidden;
     }
