@@ -8,4 +8,4 @@ A levels October (Autumn Series) 2021
 Generation 2022 May 2022-July
 
 To add:
-Adding neon or glowing border's to boxes!
+Adding neon or glowing border's to boxes! use box:shadow: inset to glow throughout.
