@@ -29,11 +29,7 @@ section{
     padding: 120px 15%;
 }
 
-/*img {
-    max-width: 20%;
-      height: auto;
-    }*/
-
+/* */
 header{
     position: fixed;
     width: 100%;
@@ -88,23 +84,8 @@ header{
     cursor: pointer;
     display: none;
 }
-/*.h-btn{
-    padding: 0 px;
-    height: 40px;
-    display: inline-block;
-    line-height: 42px;
-    background: var(--main-color);
-    color: var(--text-color);
-    border-radius: 30px;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    transition: all .3s;
-}
-.h-btn:hover{
-    transform: translateY(-5px);
-}
-*/
+
+/* */
 .home{
     height: 100vh;
     width: 100%;
@@ -118,15 +99,62 @@ header{
 }
 .home-text h1{
     margin: 20px 0px 20px;
-    font-size: var(--h1-font)
+    font-size: clamp(1rem, 3vw + 1rem, 4rem); /* Allows linear sizing of font based on mean values*/
+    position: relative;
+    width: max-content; /* Very useful in disallow animation from extending */
 }
-span{
-    color: var(--main-color);
+/* Typewriter */
+.home-text h1::before,
+h1::after {
+    content: '';
+    position: absolute; /* The below 4 properties need absolutivity */ 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
+.home-text h1::before{
+    background: rgb(43, 226, 233);
+    animation: 
+        typewriter 4s steps(21) 0.4s forwards;
+}
+.home-text h1::after{
+    width: 0.125em;
+    background: black;
+    animation: 
+        typewriter 4s steps(21) 0.4s forwards,
+        blink 750ms steps(21) infinite;
+}
+
 .home-text h3{
     font-size: 25px;
     margin-bottom: 55px;
-} 
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeIn 2s ease 5.5s forwards; /* If using variables, use calc */
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+@keyframes blink {
+    to {
+        background: transparent;
+    }
+}
+@keyframes fadeIn {
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+span{
+    color: var(--main-color);
+}
+
 .home-text h4{
     color: #585c63;
     font-size: 20px;
@@ -166,10 +194,6 @@ header.sticky{
 .sticky .navbar a::after{
     background: var(--text-color);
 }
-/*.sticky .h-btn{
-    background: var(--text-color);
-    color: #000
-}*/
 
 .about{
     background: var(--second-bg-color);
@@ -222,7 +246,7 @@ header.sticky{
     background: transparent
 }
 
-
+/* */
 .timeline{
     background: var(--bg-color);
     margin: 0 auto; /* Horizontally centers timeline */
@@ -285,8 +309,7 @@ header.sticky{
     font-size: var(--p-font);
 }
 
-
-
+/* */
 .portfolio{
     background: var(--second-bg-color)
 }
@@ -335,8 +358,7 @@ header.sticky{
     transform: scale(1.1);
 }
 
-
-
+/* */
 .contact{
     background: var(--bg-color);
     display: grid;
