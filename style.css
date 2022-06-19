@@ -165,6 +165,9 @@ span{
     max-width: 100%;
     position: relative;
 }
+.newsletter form input{
+    font-weight:900;
+}
 .newsletter form input:first-child{ /* selects first input element */
     display: inline-block;
     width: 100%;
