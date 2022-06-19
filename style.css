@@ -500,9 +500,11 @@ form textarea{
         width: 700px;
         height: auto;
     }
-    .timeline{                      /* Makes the timline fit into one column */
+    .timeline{  /* Makes the timline fit into one column */
         grid-template-columns: 1;
+        overflow-x: hidden;
     }
+    /*grid-template-columns: repeat(auto-fit, minmax(370px, auto));*/
     .contact{
         grid-template-columns: 1fr;
     }
@@ -510,9 +512,6 @@ form textarea{
         text-align: center;
         margin-bottom: 25px;
     }
-    /*.contact-img img{
-
-    }*/
     .contact-form{
         order: 2; /* Sets order of flexible items */ 
     }
