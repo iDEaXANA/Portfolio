@@ -1,0 +1,24 @@
+Project Links
+
+Animal Shelter: https://ideaxana.github.io/AnimalShelter/  
+Adjust CSS
+
+Box Generator: https://ideaxana.github.io/boxgen/
+Works. Needs CSS.
+
+Basketball game: https://ideaxana.github.io/basketball/ 	
+Add background.
+
+Canvas: https://ideaxana.github.io/Canvas/
+CSS?
+
+Typescript: https://ideaxana.github.io/Banking/
+CSS?
+
+API: https://ideaxana.github.io/API/
+CSS
+
+Final Project: 
+Need to work on this.
+Research Recursiveness
+Start coding.
