@@ -500,6 +500,9 @@ form textarea{
         width: 700px;
         height: auto;
     }
+    .timeline{                      /* Makes the timline fit into one column */
+        grid-template-columns: 1;
+    }
     .contact{
         grid-template-columns: 1fr;
     }
