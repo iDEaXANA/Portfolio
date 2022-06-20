@@ -502,7 +502,6 @@ form textarea{
     }
     .timeline{  /* Makes the timeline fit into one column */
         grid-template-columns: 1;
-        overflow-x: hidden;
     }
     /*grid-template-columns: repeat(auto-fit, minmax(370px, auto));*/
     .contact{
