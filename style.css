@@ -435,8 +435,17 @@ form textarea{
 }
 .footer p{
     font-size: 14px;
+    font-weight: 600;
     color: var(--second-color);
     letter-spacing: 1px;
+}
+.icon a{
+    width: 20px;
+    height: 20px;
+    margin: 0px 5px;
+    color: gold;
+    font-size: 2.3rem;
+    transition: all .3s;
 }
 /* Further Responsiveness */
 @media (max-width: 1270px){ /* Laptops */
@@ -522,6 +531,13 @@ form textarea{
         max-width: 100%;
         width: 760px;
         height: auto;
+    }
+    .footer{
+        justify-content: center;
+        text-align: center;
+    }
+    .footer p{
+        margin-bottom: 20px;
     }
     
 }
